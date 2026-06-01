@@ -49,7 +49,7 @@ Full architecture, cost math, latency budgets, and defensibility checklist: [**A
 
 ### Engineering deep-dives (`docs/`)
 
-7 dedicated docs, one per subsystem, each with file:line citations, limitations sections, and notes on patterns applicable to audio work:
+7 dedicated docs, one per subsystem, each with file:line citations and a limitations section:
 
 - [**`docs/AGENT.md`**](./docs/AGENT.md) — the tool-calling agent (3 tools, allow-list, single-round loop)
 - [**`docs/CLASSIFIER.md`**](./docs/CLASSIFIER.md) — Darija/Arabizi classifier (5 input forms, 260+ keywords, Arabizi 3/7/9/8/5/6)
@@ -74,7 +74,7 @@ node --test tests/agent-loop.test.js        # 21 tests — agent stack
 
 ---
 
-## Companion repos (Sami's other public artifacts)
+## Companion repos
 
 - [**jak-ma-case-study**](https://github.com/Samielakkad/AI-Product-JakMa-Case-Study) — production case study, hero metrics, 5 architectural decisions, 5 things that broke
 - [**jak-ma-eval-suite**](https://github.com/Samielakkad/AI-LLM-Evaluation-JakMa) — evaluation methodology + 5-dim rubric
