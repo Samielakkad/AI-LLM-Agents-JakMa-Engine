@@ -6,7 +6,7 @@
   "scripts": {
     "start": "node server.js",
     "dev": "node server.js",
-    "test": "node --test tests/grounded_retrieval.test.js tests/price-fairness.test.js tests/grounded_integration.test.js",
+    "test": "node --test tests/text-classifier.test.js tests/agent-loop.test.js tests/grounded_retrieval.test.js tests/price-fairness.test.js tests/grounded_integration.test.js",
     "test:grounded": "node --test tests/grounded_retrieval.test.js",
     "test:price-fairness": "node --test tests/price-fairness.test.js",
     "test:integration": "node --test tests/grounded_integration.test.js",

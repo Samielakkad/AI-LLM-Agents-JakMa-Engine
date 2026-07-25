@@ -1,13 +1,21 @@
 name: CI
+
 on:
   push: { branches: [ main ] }
   pull_request:
+
+permissions:
+  contents: read
+
 jobs:
   test:
     runs-on: ubuntu-latest
+    timeout-minutes: 10
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-node@v4
-        with: { node-version: "20" }
+        with:
+          node-version: "20"
+          cache: npm
       - run: npm ci
-      - run: node --test tests/price-fairness.test.js
+      - run: npm test
