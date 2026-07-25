@@ -1,5 +1,11 @@
 # jak.ma — AI Architecture
 
+> **Evidence boundary:** this is a design and operations note, not a public
+> benchmark report. The repository can reproduce the test-suite claims. Traffic
+> share, latency, cost, worker-count and reliability figures below are historical
+> observations or planning assumptions unless a section includes its source data
+> and calculation command.
+
 > Production retrieval-augmented chatbot + tool-calling agent for the Moroccan Darija home-services marketplace at **[jak.ma](https://jak.ma)**. This document describes the LLM serving stack, the multi-provider routing layer, the two-pass classify→generate pipeline, the single-round tool-calling agent for follow-ups, the romanized-Darija classification stack, and the cost / latency / quality math behind every model decision.
 >
 > Sister doc to [`README.md`](./README.md) (product) and [`COMPLETION_REPORT.md`](./COMPLETION_REPORT.md) (recruiter pitch).
